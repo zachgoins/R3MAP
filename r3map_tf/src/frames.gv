@@ -1,0 +1,10 @@
+digraph G {
+"base_link" -> "ins"[label="Broadcaster: /tf\nAverage rate: 10.207 Hz\nMost recent transform: 1450585085.590 ( 0.070 sec old)\nBuffer length: 4.800 sec\n"];
+"enu" -> "base_link"[label="Broadcaster: /tf\nAverage rate: 20.180 Hz\nMost recent transform: 1450585085.637 ( 0.023 sec old)\nBuffer length: 4.906 sec\n"];
+"base_link" -> "lidar"[label="Broadcaster: /tf\nAverage rate: 10.208 Hz\nMost recent transform: 1450585085.589 ( 0.070 sec old)\nBuffer length: 4.800 sec\n"];
+"base_link" -> "antenna"[label="Broadcaster: /tf\nAverage rate: 10.207 Hz\nMost recent transform: 1450585085.590 ( 0.069 sec old)\nBuffer length: 4.800 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1450585085.660"[ shape=plaintext ] ;
+ }->"enu";
+}
