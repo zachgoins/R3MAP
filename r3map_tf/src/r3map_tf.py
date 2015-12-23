@@ -23,7 +23,7 @@ if __name__ == '__main__':
     rospy.init_node('tf')
     br = tf.TransformBroadcaster()
     rospy.Subscriber('odom', Odometry, body_to_world)
-    rate = rospy.Rate(10.0)
+    rate = rospy.Rate(30.0)
     while not rospy.is_shutdown():
         br.sendTransform((0.1778, 0.0635, 0.2032),
                           tf.transformations.quaternion_from_euler(0, 0, 0),

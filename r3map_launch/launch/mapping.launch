@@ -1,0 +1,5 @@
+<launch>
+<node name="r3mapping" type="map.py" pkg="r3map_mapping" output="screen">
+	<param name ="/use_sim_time" value="true"/>
+</node>
+</launch>
